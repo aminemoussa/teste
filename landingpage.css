@@ -1,0 +1,439 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter , sans-serif;', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+.logo {
+  width: 343px;
+  height: 328px;
+}
+
+.search-bar {
+  flex-grow: 1;
+  max-width: 1009px;
+  max-height: 52px;
+  margin: 0 2rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  
+}
+
+.nav {
+  color: #000000;
+  align-items: center;
+  font-family: "Inter , sans-serif;-Regular", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  position: absolute;
+  left: 430px;
+  top: 250px;
+  display: flex;
+  gap: 9rem; 
+}
+
+.nav a {
+  font-family: 'Inter' , sans-serif;;
+  font-weight: 400;
+  text-decoration: none;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+.nav a:hover {
+  color: #c17c74;
+}
+
+.hero {
+  position: relative;
+  text-align: center;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  overflow: hidden;
+  background-image: url('images/header.jpg');
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-bottom: -200px;
+  padding-bottom: 40px;
+}
+
+.hero h1 {
+  font-weight: 400;
+  font-family: 'Inter' , sans-serif;
+  margin-bottom: 70px;
+  font-size: 36px;
+  width: 959px;
+  height: 94px;
+  text-align: center;
+  color: #342614;
+  word-wrap: break-word;
+
+}
+
+.btn {
+  font-family: 'Inter' , sans-serif;;
+  margin-top: -80px;
+  padding: 20px 40px;
+  background-color: #C17C6C;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  width: 291px; height: 74px; background: #B9684F; border-radius: 19px
+}
+
+
+.section-title {
+  font-family: 'Inter' , sans-serif;;
+  text-align: center; 
+  margin: 60px 40px 30px; 
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #C17C6C; 
+  border-bottom: 2px solid #C17C6C; 
+  padding-bottom: 5px;
+}
+
+.section-title span {
+  padding-bottom: 5px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 0 40px;
+  margin-bottom: 50px;
+}
+
+.artwork {
+  text-align: center;
+
+  box-shadow: none;
+}
+
+.artwork .image-wrapper {
+  overflow: hidden;
+}
+
+.artwork img {
+  height: 350px; 
+  width: 100%; 
+  max-width: 300px; 
+  object-fit: cover; 
+}
+
+
+.artwork .text-wrapper {
+  font-family: Inter , sans-serif;;
+  padding: 10px;
+  text-align: center;
+  margin-top: 10px; 
+  width: 100%;
+}
+
+.artwork h3 {
+  font-family: Inter , sans-serif;;
+  font-size: 20px;
+  margin: 5px 0;
+  font-weight: 400;
+}
+
+.artwork p {
+  font-family: Inter , sans-serif;;
+  color: #C17C6C;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 60px 40px;
+  background: #fff;
+  margin-top: 60px;
+}
+
+.about-gallery-interior {
+  width: 637px; 
+  height: 774px;
+  object-fit: cover;
+}
+
+.about-exibition-image {
+  width: 597px; 
+  height: 317px
+}
+
+.about-content {
+  padding: 20px 0;
+}
+
+.about-content h2 {
+  font-family: 'Inter' , sans-serif;;
+  color: #C17C6C;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.about-content p {
+  color: #666;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.footer {
+  background: #F0EBE4;
+  padding: 40px;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.footer-logo {
+  width: 365px;
+  height: 346px;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  font-family: Inter , sans-serif;;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.voir-plus {
+  text-align: right;
+  padding: 0 40px;
+  margin: 20px 0;
+}
+
+.voir-plus a {
+  font-family: Inter , sans-serif;;
+  color: #C17C6C;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+.artists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  padding: 0 40px;
+}
+
+
+.artist-card {
+  position: relative;
+  background-color: #fff; 
+  box-shadow: none; 
+  text-align: center; 
+  overflow: hidden;
+  margin: 0 auto; 
+}
+
+
+.artist-card img {
+  width: 358px; 
+  height: 451px;
+  object-fit: cover; 
+  transition: transform 0.3s ease; 
+}
+
+
+.artist-name {
+  font-family: 'Inter' , sans-serif;;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 358px; 
+  height: 93px; 
+  background: rgba(172, 131, 97, 0.74);
+  color: #ffffff;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding: 27px;
+  z-index: 5;
+}
+
+
+.artist-card:hover img {
+  transform: scale(1.05); 
+}
+
+
+
+
+@media (max-width: 1200px) {
+
+  .nav {
+      transform: translateX(0);
+      gap: 30px;
+  }
+
+  .gallery {
+      grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .artworks img {
+      height: 500px; 
+  }
+
+  .hero h1 {
+      font-size: 36px; 
+  }
+
+  .about {
+      grid-template-columns: 1fr;
+  }
+
+  .about img {
+      height: 250px; 
+  }
+
+  .section-title {
+      font-size: 20px; 
+  }
+
+  .artist-card {
+      margin-bottom: 10px;
+  }
+
+  .artist-name {
+      font-size: 20px;
+      padding: 30px;
+  }
+
+  .hero h1 {
+      font-size: 30px;
+  }
+
+  .btn {
+      font-size: 14px;
+      padding: 15px 40px;
+  }
+
+
+  @media (max-width: 600px) {
+      .nav {
+          flex-direction: column;
+          gap: 15px;
+          text-align: center;
+      }
+
+      .gallery {
+          grid-template-columns: 1fr; 
+      }
+
+      .hero h1 {
+          font-size: 28px;
+      }
+
+      .search-bar {
+          flex-grow: 1;
+          max-width: 1009px;
+          max-height: 52px;
+          margin: 0 2rem;
+      }
+
+      .about img {
+          height: 200px; 
+      }
+
+      .artist-name {
+          font-size: 18px;
+          padding: 20px;
+      }
+
+      .artist-card img {
+          object-fit: cover; 
+      }
+  }
+}
+
+
+.section-title {
+  text-align: center; 
+  margin: 60px 40px 30px; 
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.highlight {
+  color: #C17C6C; 
+  border-bottom: 2px solid #C17C6C; 
+  padding-bottom: 5px;
+}
+
+.section-title span {
+  padding-bottom: 5px;
+}
+
+/* Exhibition Section */
+.exhibition-section {
+  position: relative; 
+  width: 100%; 
+  height: 600px; /* Increased the height of the section for a larger image */
+}
+
+.exhibition-banner {
+  width: 100%;
+  height: 600px; /* Increased the height for a larger image */
+  object-fit: cover; 
+}
+
+.exhibition-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; 
+  color: white; 
+  font-size: 24px; /* Increased font size for larger text */
+  background: rgba(0, 0, 0, 0.5); 
+  padding: 30px 20px 30px 40px; /* Increased padding for more space around text */
+  text-align: left; 
+}
